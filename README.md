@@ -24,10 +24,13 @@ Para testar como no ar: `npx serve .` ou qualquer servidor estático.
 
 ## 👥 Desenvolvedores
 
-**Guilherme Neri** — design, arquitetura, CSS/layout, estilização mobile-first, JavaScript (`main.js`) e SEO.
+**Guilherme Neri** — design, arquitetura da informação, HTML/CSS, layout, estilização mobile-first, estrutura das seções e SEO básico.
+
+**Lucas-Heitz** — JavaScript (`main.js`), lógica do WhatsApp, validação de formulário, animações, galeria interativa e integração com APIs externas.
 
 Repositórios individuais:
-- [github.com/GuilhermeNerii/landing-page-barbearia](https://github.com/GuilhermeNerii/landing-page-barbearia)
+- [github.com/GuilhermeNerii](https://github.com/GuilhermeNerii)
+- [github.com/Lucas-Heitz](https://github.com/Lucas-Heitz)
 
 ## O que trocar antes de publicar
 
