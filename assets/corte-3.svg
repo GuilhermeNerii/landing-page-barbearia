@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Foto de exemplo: barba desenhada">
+  <!-- PLACEHOLDER: troque por uma foto real de barba (800x600) -->
+  <rect width="800" height="600" fill="#161616"/>
+  <rect x="16" y="16" width="768" height="568" fill="none" stroke="#d4af37" stroke-width="3"/>
+  <g fill="none" stroke="#d4af37" stroke-width="7" stroke-linecap="round">
+    <path d="M320 200 Q400 170 480 200"/>
+    <path d="M330 230 Q400 330 470 230"/>
+    <path d="M355 265 Q400 300 445 265"/>
+    <circle cx="360" cy="215" r="8" fill="#d4af37"/>
+    <circle cx="440" cy="215" r="8" fill="#d4af37"/>
+  </g>
+  <text x="400" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#f7f5f0">CORTE 03</text>
+  <text x="400" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#d4af37">Barba desenhada — troque por sua foto</text>
+</svg>

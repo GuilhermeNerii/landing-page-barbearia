@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Imagem de compartilhamento da Navalha de Ouro Barbearia">
+  <!-- Fonte da imagem social: exporte este arquivo como assets/og-image.png (1200x630) -->
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <rect x="24" y="24" width="1152" height="582" fill="none" stroke="#d4af37" stroke-width="4"/>
+  <g stroke="#d4af37" stroke-opacity=".2" stroke-width="2">
+    <path d="M600 630 L300 0 M600 630 L900 0 M600 630 L0 250 M600 630 L1200 250"/>
+  </g>
+  <g stroke="#d4af37" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M545 175 L655 105"/>
+    <circle cx="540" cy="185" r="16"/>
+    <circle cx="660" cy="100" r="16"/>
+  </g>
+  <text x="600" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="76" font-weight="bold" letter-spacing="6" fill="#f7f5f0">NAVALHA DE OURO</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" letter-spacing="14" fill="#d4af37">BARBEARIA</text>
+  <line x1="380" y1="440" x2="820" y2="440" stroke="#d4af37" stroke-width="2"/>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#f7f5f0">Corte de respeito, acabamento de ouro.</text>
+  <text x="600" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#b8b4ab">Tijuca &bull; Rio de Janeiro &bull; Seg a Sáb, 9h às 20h</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="presentation">
+  <!-- Fundo decorativo do topo: raios art déco (troque por uma foto da barbearia) -->
+  <rect width="1600" height="900" fill="#0d0d0d"/>
+  <g stroke="#d4af37" stroke-opacity=".16" stroke-width="2">
+    <path d="M800 900 L200 0 M800 900 L500 0 M800 900 L800 0 M800 900 L1100 0 M800 900 L1400 0 M800 900 L1600 300 M800 900 L0 300"/>
+  </g>
+  <g stroke="#d4af37" stroke-opacity=".35" fill="none" stroke-width="3">
+    <path d="M640 210 L800 130 L960 210 L800 290 Z"/>
+    <path d="M690 210 L800 165 L910 210 L800 255 Z"/>
+    <circle cx="800" cy="210" r="10" fill="#d4af37" stroke="none"/>
+  </g>
+  <rect width="1600" height="900" fill="url(#sombra)"/>
+  <defs>
+    <linearGradient id="sombra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0d0d" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#0d0d0d" stop-opacity=".85"/>
+    </linearGradient>
+  </defs>
+</svg>

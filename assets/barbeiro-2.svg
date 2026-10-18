@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Retrato de exemplo do barbeiro">
+  <!-- PLACEHOLDER: troque por uma foto real do barbeiro (400x400) -->
+  <rect width="400" height="400" fill="#1a1a1a"/>
+  <circle cx="200" cy="150" r="72" fill="#0d0d0d" stroke="#d4af37" stroke-width="4"/>
+  <path d="M80 400 Q80 275 200 275 Q320 275 320 400 Z" fill="#0d0d0d" stroke="#d4af37" stroke-width="4"/>
+  <text x="200" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#d4af37">BARBEIRO 02</text>
+</svg>

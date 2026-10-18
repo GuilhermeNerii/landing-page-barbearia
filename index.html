@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ============ SEO BÁSICO ============ -->
+  <!-- Para publicar: troque a URL abaixo (canonical, OG e JSON-LD) pelo endereço real do site -->
+  <title>Navalha de Ouro Barbearia | Corte e Barba na Tijuca - Rio de Janeiro</title>
+  <meta name="description" content="Barbearia na Tijuca, RJ. Corte, barba, combo, sobrancelha e pigmentação com acabamento de respeito. Agende pelo WhatsApp. Seg a sáb, das 9h às 20h.">
+  <meta name="author" content="Navalha de Ouro Barbearia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.navalhadeouro.com.br/">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- ============ OPEN GRAPH (WhatsApp / Facebook) ============ -->
+  <!-- og:image precisa ser .png/.jpg com no mínimo 1200x630px: exporte assets/og-image.svg para PNG -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Navalha de Ouro Barbearia">
+  <meta property="og:title" content="Navalha de Ouro Barbearia | Corte de respeito, acabamento de ouro">
+  <meta property="og:description" content="A barbearia da Tijuca com o melhor acabamento da região. Corte, barba e combo com hora marcada pelo WhatsApp.">
+  <meta property="og:url" content="https://www.navalhadeouro.com.br/">
+  <meta property="og:image" content="https://www.navalhadeouro.com.br/assets/og-image.png">
+  <meta property="og:image:alt" content="Logo da Navalha de Ouro Barbearia sobre fundo preto e dourado">
+
+  <!-- ============ TWITTER CARD ============ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Navalha de Ouro Barbearia | Tijuca, Rio de Janeiro">
+  <meta name="twitter:description" content="Corte de respeito, acabamento de ouro. Agende seu horário pelo WhatsApp.">
+  <meta name="twitter:image" content="https://www.navalhadeouro.com.br/assets/og-image.png">
+
+  <!-- Fonte de títulos (display) com display=swap para não travar a renderização -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Marca que o JS está ativo (evita esconder conteúdo sem JavaScript) -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- ============ DADOS ESTRUTURADOS (rich results do Google) ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Navalha de Ouro Barbearia",
+    "slogan": "Corte de respeito, acabamento de ouro.",
+    "image": "https://www.navalhadeouro.com.br/assets/og-image.png",
+    "priceRange": "$$",
+    "telephone": "+55 21 99999-9999",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Conde de Bonfim, 300 - Sala 2",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "postalCode": "20541-000",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -22.9253, "longitude": -43.2328 },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/navalhadeouro"],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "312" }
+  }
+  </script>
+</head>
+
+<!--
+  ============================================================
+  ATENÇÃO AO TROCAR O WHATSAPP:
+  procure e substitua o número 5521999999999 em TODO o arquivo
+  index.html (e também no arquivo js/main.js). Formato:
+  55 + DDD (21) + número = 5521999999999
+  ============================================================
+-->
+<body>
+  <!-- Link de pular conteúdo (acessibilidade: navegação por teclado) -->
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <!-- ============ CABEÇALHO / NAVEGAÇÃO ============ -->
+  <header class="cabecalho" id="topo">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="nav__logo" href="#inicio">
+        <img src="assets/logo.svg" alt="" width="42" height="42" decoding="async">
+        <span class="nav__nome">
+          Navalha de Ouro
+          <small>Barbearia &bull; Tijuca</small>
+        </span>
+      </a>
+
+      <!-- Botão do menu mobile -->
+      <button class="nav__botao" id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav__botao-linhas" aria-hidden="true"></span>
+        <span class="conteudo-oculto">Abrir menu de navegação</span>
+      </button>
+
+      <!-- Lista de links -->
+      <ul class="nav__lista" id="menu">
+        <li><a class="nav__link" href="#servicos">Serviços</a></li>
+        <li><a class="nav__link" href="#galeria">Galeria</a></li>
+        <li><a class="nav__link" href="#sobre">Sobre</a></li>
+        <li><a class="nav__link" href="#localizacao">Localização</a></li>
+        <li><a class="nav__link" href="#faq">Dúvidas</a></li>
+        <li class="nav__item-cta">
+          <a class="btn btn--dourado btn--pequeno" href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Navalha%20de%20Ouro." target="_blank" rel="noopener">
+            Agendar
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- =====================================================
+         1. TOPO / HERO — título forte + botão do WhatsApp
+         ===================================================== -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="hero__fundo" aria-hidden="true"></div>
+
+      <div class="hero__conteudo limite">
+        <p class="hero__selo">Tijuca &bull; Rio de Janeiro &bull; Desde 2015</p>
+
+        <h1 class="hero__titulo" id="titulo-hero">
+          Corte de respeito,<br>
+          <span>acabamento de ouro.</span>
+        </h1>
+
+        <p class="hero__subtitulo">
+          A Navalha de Ouro é a barbearia de verdade da Tijuca: máquina bem cuidada,
+          navalha afiada, conversa boa e aquele acabamento que só quem entende entrega.
+          Sem pressa, sem enrolação — só corte que dá orgulho de exibir.
+        </p>
+
+        <div class="hero__acoes">
+          <a class="btn btn--dourado btn--grande"
+             href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Navalha%20de%20Ouro."
+             target="_blank" rel="noopener">
+            Agendar pelo WhatsApp
+          </a>
+          <a class="btn btn--contorno btn--grande" href="#servicos">Ver preços</a>
+        </div>
+
+        <ul class="hero__info">
+          <li>Seg a Sáb, 9h às 20h</li>
+          <li>Atendimento por hora marcada</li>
+          <li>Pix, cartão e dinheiro</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         2. SERVIÇOS E PREÇOS
+         ===================================================== -->
+    <section class="secao secao--escuro" id="servicos" aria-labelledby="titulo-servicos">
+      <div class="limite">
+        <header class="secao__cabecalho revelar">
+          <p class="secao__rotulo">Tabela de serviços</p>
+          <h2 class="secao__titulo" id="titulo-servicos">Serviço e preço <em>sem surpresa</em></h2>
+          <p class="secao__descricao">
+            Preço fechado, combinado na hora do agendamento. Vale combinar o combo:
+            corte + barba sai mais em conta e dura a semana inteira.
+          </p>
+        </header>
+
+        <ul class="servicos">
+          <li class="servico revelar">
+            <div class="servico__topo">
+              <h3 class="servico__nome">Corte</h3>
+              <span class="servico__tempo">45 min</span>
+            </div>
+            <p class="servico__desc">Máquina, tesoura e acabamento na navalha. Inclui lavagem e finalização com pomada.</p>
+            <p class="servico__preco"><small>R$</small>55</p>
+          </li>
+
+          <li class="servico revelar">
+            <div class="servico__topo">
+              <h3 class="servico__nome">Barba</h3>
+              <span class="servico__tempo">30 min</span>
+            </div>
+            <p class="servico__desc">Toalha quente, navalha afiada, óleo e hidratação. Acabamento no canto do queixo.</p>
+            <p class="servico__preco"><small>R$</small>40</p>
+          </li>
+
+          <li class="servico servico--destaque revelar">
+            <span class="servico__selo">Mais pedido</span>
+            <div class="servico__topo">
+              <h3 class="servico__nome">Combo Corte + Barba</h3>
+              <span class="servico__tempo">1h10</span>
+            </div>
+            <p class="servico__desc">O pacote completo do cavalheiro. Corte + barba feita do jeito certo, com economia de R$ 10.</p>
+            <p class="servico__preco"><small>R$</small>85</p>
+          </li>
+
+          <li class="servico revelar">
+            <div class="servico__topo">
+              <h3 class="servico__nome">Sobrancelha</h3>
+              <span class="servico__tempo">15 min</span>
+            </div>
+            <p class="servico__desc">Design na navalha ou pinça, respeitando o seu traço. Sem exagero, sem estranhar.</p>
+            <p class="servico__preco"><small>R$</small>25</p>
+          </li>
+
+          <li class="servico revelar">
+            <div class="servico__topo">
+              <h3 class="servico__nome">Pigmentação</h3>
+              <span class="servico__tempo">40 min</span>
+            </div>
+            <p class="servico__desc">Preenchimento de falhas no cabelo ou barba com tom sob medida. Efeito natural.</p>
+            <p class="servico__preco"><small>R$</small>45</p>
+          </li>
+
+          <li class="servico servico--cta revelar">
+            <h3 class="servico__nome">Qual combina com você?</h3>
+            <p class="servico__desc">Manda um zap que a gente monta o atendimento ideal pro seu rosto e pro seu tempo.</p>
+            <a class="btn btn--dourado"
+               href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Navalha%20de%20Ouro."
+               target="_blank" rel="noopener">
+              Tirar dúvida no WhatsApp
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         3. GALERIA DE CORTES (grid de imagens)
+         As imagens são placeholders: troque os arquivos em /assets
+         ===================================================== -->
+    <section class="secao" id="galeria" aria-labelledby="titulo-galeria">
+      <div class="limite">
+        <header class="secao__cabecalho revelar">
+          <p class="secao__rotulo">Portfólio</p>
+          <h2 class="secao__titulo" id="titulo-galeria">Cortes que <em>falam por si</em></h2>
+          <p class="secao__descricao">
+            Degradê, navalha, tesoura na régua. Toque numa foto para ver de perto o padrão
+            de acabamento que sai daqui.
+          </p>
+        </header>
+
+        <ul class="galeria">
+          <li class="revelar">
+            <button class="galeria__item" type="button"
+                    data-full="assets/corte-1.svg"
+                    data-alt="Degradê baixo com topo textualhado na Navalha de Ouro">
+              <img src="assets/corte-1.svg" alt="Degradê baixo com topo textualhado" width="800" height="600" loading="lazy" decoding="async">
+              <span class="galeria__legenda">Degradê navalhado</span>
+            </button>
+          </li>
+          <li class="revelar">
+            <button class="galeria__item" type="button"
+                    data-full="assets/corte-2.svg"
+                    data-alt="Corte clássico na régua com acabamento na navalha">
+              <img src="assets/corte-2.svg" alt="Corte clássico na régua" width="800" height="600" loading="lazy" decoding="async">
+              <span class="galeria__legenda">Clássico na régua</span>
+            </button>
+          </li>
+          <li class="revelar">
+            <button class="galeria__item" type="button"
+                    data-full="assets/corte-3.svg"
+                    data-alt="Barba desenhada com toalha quente e óleo">
+              <img src="assets/corte-3.svg" alt="Barba desenhada com toalha quente" width="800" height="600" loading="lazy" decoding="async">
+              <span class="galeria__legenda">Barba desenhada</span>
+            </button>
+          </li>
+          <li class="revelar">
+            <button class="galeria__item" type="button"
+                    data-full="assets/corte-4.svg"
+                    data-alt="Corte social com franja penteada para trás">
+              <img src="assets/corte-4.svg" alt="Corte social com franja penteada" width="800" height="600" loading="lazy" decoding="async">
+              <span class="galeria__legenda">Social penteado</span>
+            </button>
+          </li>
+          <li class="revelar">
+            <button class="galeria__item" type="button"
+                    data-full="assets/corte-5.svg"
+                    data-alt="Combo corte e barba com alinhamento de contornos">
+              <img src="assets/corte-5.svg" alt="Combo corte e barba" width="800" height="600" loading="lazy" decoding="async">
+              <span class="galeria__legenda">Combo completo</span>
+            </button>
+          </li>
+          <li class="revelar">
+            <button class="galeria__item" type="button"
+                    data-full="assets/corte-6.svg"
+                    data-alt="Corte infantil com acabamento suave nas laterais">
+              <img src="assets/corte-6.svg" alt="Corte com acabamento suave" width="800" height="600" loading="lazy" decoding="async">
+              <span class="galeria__legenda">Acabamento suave</span>
+            </button>
+          </li>
+        </ul>
+
+        <p class="galeria__nota revelar">
+          Quer ver mais? O dia a dia tá no Instagram:
+          <a href="https://www.instagram.com/navalhadeouro" target="_blank" rel="noopener">@navalhadeouro</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Caixa de visualização da galeria (lightbox) -->
+    <dialog class="lightbox" id="lightbox" aria-label="Visualização ampliada da foto">
+      <button class="lightbox__fechar" id="lightbox-fechar" type="button" aria-label="Fechar visualização">&times;</button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="">
+    </dialog>
+
+    <!-- =====================================================
+         4. SOBRE A BARBEARIA E OS BARBEIROS
+         ===================================================== -->
+    <section class="secao secao--escuro" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="limite sobre">
+        <div class="sobre__texto revelar">
+          <p class="secao__rotulo">Quem faz a história</p>
+          <h2 class="secao__titulo" id="titulo-sobre">Barbearia de bairro, <em>padrão de cidade grande</em></h2>
+
+          <p>
+            A Navalha de Ouro nasceu na Tijuca em 2015, com uma ideia simples: tratar cada
+            cliente como cliente fiel, não como fila. Aqui a cadeira é sua, a conversa é boa
+            e o acabamento é conferido antes de você levantar.
+          </p>
+          <p>
+            Higiene em primeiro lugar — navalha descartável por cliente, ferramentas
+            esterilizadas e toalha limpa a cada atendimento. Produtos profissionais, mão firme
+            e aquele orgulho de quem assina o próprio trabalho.
+          </p>
+
+          <ul class="sobre__pilares">
+            <li><strong>Higiene real</strong> — kit esterilizado a cada cliente.</li>
+            <li><strong>Sem espera torta</strong> — hora marcada é hora marcada.</li>
+            <li><strong>Preço honesto</strong> — combinado antes, cobrado depois.</li>
+          </ul>
+
+          <div class="sobre__numeros">
+            <div><strong>10</strong><span>anos na Tijuca</span></div>
+            <div><strong>+12 mil</strong><span>cortes feitos</span></div>
+            <div><strong>4,9</strong><span>no Google</span></div>
+          </div>
+        </div>
+
+        <ul class="barbeiros" aria-label="Equipe de barbeiros">
+          <li class="barbeiro revelar">
+            <img src="assets/barbeiro-1.svg" alt="Retrato do barbeiro Rafael" width="400" height="400" loading="lazy" decoding="async">
+            <div class="barbeiro__info">
+              <h3>Rafael Nogueira</h3>
+              <p class="barbeiro__cargo">Mestre da navalha &bull; 12 anos de ofício</p>
+              <p>Especialista em degradê e acabamento na navalha. Se tem detalhe difícil, é com ele.</p>
+            </div>
+          </li>
+          <li class="barbeiro revelar">
+            <img src="assets/barbeiro-2.svg" alt="Retrato do barbeiro Diego" width="400" height="400" loading="lazy" decoding="async">
+            <div class="barbeiro__info">
+              <h3>Diego Martins</h3>
+              <p class="barbeiro__cargo">Fade master &bull; 8 anos de ofício</p>
+              <p>Vive degradê, freestyle e linha na régua. A cadeira dele é a mais pedida da Tijuca.</p>
+            </div>
+          </li>
+          <li class="barbeiro revelar">
+            <img src="assets/barbeiro-3.svg" alt="Retrato do barbeiro Carlos" width="400" height="400" loading="lazy" decoding="async">
+            <div class="barbeiro__info">
+              <h3>Carlos Alberto</h3>
+              <p class="barbeiro__cargo">Barba, sobrancelha e pigmentação</p>
+              <p>Cor na medida, contorno no ponto e barba tratada com toalha quente do jeito antigo.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         5. DEPOIMENTOS DE CLIENTES
+         ===================================================== -->
+    <section class="secao" id="depoimentos" aria-labelledby="titulo-depoimentos">
+      <div class="limite">
+        <header class="secao__cabecalho revelar">
+          <p class="secao__rotulo">Na palavra do cliente</p>
+          <h2 class="secao__titulo" id="titulo-depoimentos">Galera que volta <em>sempre</em></h2>
+        </header>
+
+        <!-- Controles do carrossel de depoimentos -->
+        <div class="depoimentos__controles">
+          <button class="depoimentos__seta" id="dep-anterior" type="button" aria-label="Ver depoimento anterior">&#8592;</button>
+          <button class="depoimentos__seta" id="dep-proximo" type="button" aria-label="Ver próximo depoimento">&#8594;</button>
+        </div>
+
+        <ul class="depoimentos__trilha revelar" tabindex="0" aria-label="Lista de depoimentos de clientes">
+          <li class="depoimento">
+            <p class="depoimento__estrelas" aria-label="Nota 5 de 5 estrelas">★★★★★</p>
+            <blockquote>
+              <p>“Achei o barbeiro definitivo. Degradê impecável, atendimento sem correria
+              e o preço bate com o que foi combinado. Já marquei a próxima.”</p>
+            </blockquote>
+            <footer><strong>Thiago M.</strong> <span>Tijuca</span></footer>
+          </li>
+
+          <li class="depoimento">
+            <p class="depoimento__estrelas" aria-label="Nota 5 de 5 estrelas">★★★★★</p>
+            <blockquote>
+              <p>“Barba com toalha quente é outra coisa. Saí de lá parecendo outra pessoa
+              e minha mulher elogiou. Já agendei o combo do mês que vem.”</p>
+            </blockquote>
+            <footer><strong>Wesley A.</strong> <span>Vila Isabel</span></footer>
+          </li>
+
+          <li class="depoimento">
+            <p class="depoimento__estrelas" aria-label="Nota 5 de 5 estrelas">★★★★★</p>
+            <blockquote>
+              <p>“Marquei pelo WhatsApp, resposta rápida e cheguei na hora marcada.
+              Acabamento de ouro, literalmente. Virou meu ponto fixo.”</p>
+            </blockquote>
+            <footer><strong>Bruno S.</strong> <span>Andaraí</span></footer>
+          </li>
+
+          <li class="depoimento">
+            <p class="depoimento__estrelas" aria-label="Nota 5 de 5 estrelas">★★★★★</p>
+            <blockquote>
+              <p>“Levo meu filho de 14 anos desde que abriram. Cuidadoso, paciente com o
+              moleque e o corte dura a semana toda sem desmontar.”</p>
+            </blockquote>
+            <footer><strong>Lucas P.</strong> <span>Tijuca</span></footer>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         6. HORÁRIO DE FUNCIONAMENTO E LOCALIZAÇÃO
+         ===================================================== -->
+    <section class="secao secao--escuro" id="localizacao" aria-labelledby="titulo-localizacao">
+      <div class="limite">
+        <header class="secao__cabecalho revelar">
+          <p class="secao__rotulo">Onde a gente está</p>
+          <h2 class="secao__titulo" id="titulo-localizacao">Tijuca é <em>com a gente</em></h2>
+        </header>
+
+        <div class="localizacao">
+          <div class="revelar">
+            <!-- Cartão de horários -->
+            <div class="horarios">
+              <p class="horarios__selo" id="status-funcionamento">Seg a Sáb, das 9h às 20h</p>
+
+              <ul class="horarios__lista">
+                <li><span>Segunda a sexta</span> <span>09h — 20h</span></li>
+                <li><span>Sábado</span> <span>09h — 20h</span></li>
+                <li class="fechado"><span>Domingo</span> <span>Fechado</span></li>
+              </ul>
+
+              <p class="horarios__nota">
+                Último atendimento às 19h15. Combina pelo WhatsApp antes de sair de casa
+                que a gente já deixa a cadeira reservada.
+              </p>
+            </div>
+
+            <!-- Endereço e ações -->
+            <div class="endereco">
+              <h3>Endereço</h3>
+              <!-- CONFIRME o endereço real antes de publicar -->
+              <p>
+                Rua Conde de Bonfim, 300 — Sala 2<br>
+                Tijuca, Rio de Janeiro — RJ<br>
+                CEP 20541-000
+              </p>
+
+              <div class="endereco__acoes">
+                <a class="btn btn--dourado"
+                   href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Conde%20de%20Bonfim%2C%20300%20-%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ"
+                   target="_blank" rel="noopener">
+                  Como chegar
+                </a>
+                <a class="btn btn--contorno"
+                   href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Estou%20com%20d%C3%BAvida%20para%20chegar%20%C3%A0%20barbearia."
+                   target="_blank" rel="noopener">
+                  Chamar no WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa (embed do Google Maps sem chave de API) -->
+          <div class="mapa revelar">
+            <iframe
+              src="https://www.google.com/maps?q=Tijuca,%20Rio%20de%20Janeiro,%20RJ&z=15&output=embed"
+              title="Mapa da Navalha de Ouro Barbearia no bairro da Tijuca, Rio de Janeiro"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         7. FAQ — DÚVIDAS FREQUENTES
+         ===================================================== -->
+    <section class="secao" id="faq" aria-labelledby="titulo-faq">
+      <div class="limite">
+        <header class="secao__cabecalho revelar">
+          <p class="secao__rotulo">Antes de marcar</p>
+          <h2 class="secao__titulo" id="titulo-faq">Dúvidas <em>de sempre</em></h2>
+        </header>
+
+        <div class="faq revelar">
+          <!-- Pagamento -->
+          <details class="faq__item">
+            <summary class="faq__pergunta">Quais formas de pagamento vocês aceitam?</summary>
+            <div class="faq__resposta">
+              <p>Aceitamos Pix (o preferido: rápido e sem taxa), cartão de débito,
+              cartão de crédito em até 3x e dinheiro. A gente combina o valor no agendamento
+              e não cobra nada a mais depois.</p>
+            </div>
+          </details>
+
+          <!-- Tempo de atendimento -->
+          <details class="faq__item">
+            <summary class="faq__pergunta">Quanto tempo demora cada atendimento?</summary>
+            <div class="faq__resposta">
+              <p>Depende do serviço, mas dá pra planejar o dia em torno disso:</p>
+              <ul>
+                <li><span>Corte</span> <span>45 min</span></li>
+                <li><span>Barba</span> <span>30 min</span></li>
+                <li><span>Combo corte + barba</span> <span>1h10</span></li>
+                <li><span>Sobrancelha</span> <span>15 min</span></li>
+                <li><span>Pigmentação</span> <span>40 min</span></li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Cancelamento -->
+          <details class="faq__item">
+            <summary class="faq__pergunta">Como funciona cancelamento ou remarcação?</summary>
+            <div class="faq__resposta">
+              <p>Avisa a gente com pelo menos <strong>2 horas de antecedência</strong> pelo
+              WhatsApp que remarcamos sem problema nenhum. Faltou sem avisar duas vezes
+              seguidas? A próxima reserva pode pedir um sinal de R$ 20 no Pix (que desconta
+              do atendimento). Cadeira parada é hora perdida do barbeiro — combinamos assim
+              para respeitar quem chega na hora.</p>
+            </div>
+          </details>
+
+          <!-- Sem hora marcada -->
+          <details class="faq__item">
+            <summary class="faq__pergunta">Preciso agendar ou posso chegar direto?</summary>
+            <div class="faq__resposta">
+              <p>Pode chegar direto: atendemos por ordem de chegada quando há cadeira livre.
+              Mas quem marca pelo WhatsApp garante o horário e não fica esperando. Nos fins de
+              semana a fila enche rápido.</p>
+            </div>
+          </details>
+
+          <!-- Menores de idade -->
+          <details class="faq__item">
+            <summary class="faq__pergunta">Vocês atendem menores de idade?</summary>
+            <div class="faq__resposta">
+              <p>Sim! Atendemos rapazes a partir de 12 anos. Abaixo disso, pedimos a presença
+              de um responsável durante o atendimento.</p>
+            </div>
+          </details>
+
+          <!-- Higiene -->
+          <details class="faq__item">
+            <summary class="faq__pergunta">Como funciona a higiene das ferramentas?</summary>
+            <div class="faq__resposta">
+              <p>Navalha e lâmina são descartáveis por cliente, a máquina é higienizada entre
+              um atendimento e outro e todo o kit passa por esterilização. Toalha e capa são
+              trocadas sempre.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         8. FORMULÁRIO DE CONTATO (envia pelo WhatsApp)
+         ===================================================== -->
+    <section class="secao secao--escuro" id="contato" aria-labelledby="titulo-contato">
+      <div class="limite contato">
+        <div class="contato__texto revelar">
+          <p class="secao__rotulo">Fala com a gente</p>
+          <h2 class="secao__titulo" id="titulo-contato">Reserva feita <em>em 1 minuto</em></h2>
+          <p>
+            Preenche aí embaixo que a gente já abre o WhatsApp com a mensagem pronta —
+            é só apertar enviar. Respondemos todos os dias, das 9h às 20h.
+          </p>
+
+          <div class="contato__canais">
+            <a href="https://wa.me/5521999999999" target="_blank" rel="noopener">
+              <span aria-hidden="true">💬</span>
+              <span>
+                <strong>WhatsApp</strong>
+                <span>(21) 99999-9999</span>
+              </span>
+            </a>
+            <a href="https://www.instagram.com/navalhadeouro" target="_blank" rel="noopener">
+              <span aria-hidden="true">📸</span>
+              <span>
+                <strong>Instagram</strong>
+                <span>@navalhadeouro</span>
+              </span>
+            </a>
+            <a href="mailto:contato@navalhadeouro.com.br">
+              <span aria-hidden="true">✉️</span>
+              <span>
+                <strong>E-mail</strong>
+                <span>contato@navalhadeouro.com.br</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário: monta a mensagem e leva para o WhatsApp -->
+        <form class="formulario revelar" id="form-contato" novalidate>
+          <div class="campo">
+            <label for="nome">Seu nome <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Como te chamamos?"
+                   autocomplete="name" required minlength="2">
+          </div>
+
+          <div class="campo">
+            <label for="whatsapp">Seu WhatsApp <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(21) 99999-9999"
+                   autocomplete="tel" required inputmode="tel"
+                   pattern="[0-9\s()+-]{10,20}"
+                   title="Digite um telefone válido, exemplo: (21) 99999-9999">
+          </div>
+
+          <div class="campo">
+            <label for="servico">Serviço desejado <span class="obrigatorio" aria-hidden="true">*</span></label>
+            <select id="servico" name="servico" required>
+              <option value="" selected disabled>Escolha uma opção</option>
+              <option value="Corte (R$ 55)">Corte — R$ 55</option>
+              <option value="Barba (R$ 40)">Barba — R$ 40</option>
+              <option value="Combo corte + barba (R$ 85)">Combo corte + barba — R$ 85</option>
+              <option value="Sobrancelha (R$ 25)">Sobrancelha — R$ 25</option>
+              <option value="Pigmentação (R$ 45)">Pigmentação — R$ 45</option>
+              <option value="Ainda não sei, me ajudem">Ainda não sei — me ajudem</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="dia">Melhor dia e horário</label>
+            <input type="text" id="dia" name="dia" placeholder="Ex.: quinta à tarde, sábado de manhã">
+            <p class="dica">Opcional — se preferir, combine direto na conversa.</p>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Observação</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Alguma preferência de estilo ou barbeiro?"></textarea>
+          </div>
+
+          <button class="btn btn--zap btn--grande formulario__enviar" type="submit">
+            Enviar pelo WhatsApp
+          </button>
+
+          <p class="formulario__status" id="form-status" role="status" aria-live="polite"></p>
+
+          <p class="formulario__aviso">
+            Ao enviar, você concorda em iniciar o atendimento pelo WhatsApp de acordo com nossa
+            <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade (LGPD)</a>.
+            Prefere falar direto? <a href="https://wa.me/5521999999999" target="_blank" rel="noopener">Chama no WhatsApp</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       RODAPÉ
+       ===================================================== -->
+  <footer class="rodape">
+    <div class="limite">
+      <div class="rodape__grade">
+        <div class="rodape__marca">
+          <img src="assets/logo.svg" alt="" width="54" height="54" loading="lazy">
+          <p>
+            Barbearia masculina na Tijuca desde 2015. Corte, barba e acabamento
+            feitos com calma, higiene e orgulho do ofício.
+          </p>
+          <p class="rodape__slogan">Corte de respeito, acabamento de ouro.</p>
+        </div>
+
+        <nav aria-label="Navegação do rodapé">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#servicos">Serviços e preços</a></li>
+            <li><a href="#galeria">Galeria de cortes</a></li>
+            <li><a href="#sobre">Sobre a barbearia</a></li>
+            <li><a href="#localizacao">Horário e localização</a></li>
+            <li><a href="#faq">Dúvidas frequentes</a></li>
+            <li><a href="#contato">Fale conosco</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="https://wa.me/5521999999999" target="_blank" rel="noopener">WhatsApp (21) 99999-9999</a></li>
+            <li><a href="mailto:contato@navalhadeouro.com.br">contato@navalhadeouro.com.br</a></li>
+            <li>Rua Conde de Bonfim, 300 — Tijuca, RJ</li>
+            <li>Seg a Sáb, das 9h às 20h</li>
+          </ul>
+          <p class="rodape__social-area">
+            <a class="rodape__social" href="https://www.instagram.com/navalhadeouro" target="_blank" rel="noopener">
+              <span aria-hidden="true">📸</span> @navalhadeouro
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="rodape__base">
+        <p>&copy; <span id="ano-atual">2026</span> Navalha de Ouro Barbearia — Todos os direitos reservados.</p>
+        <p>
+          Tijuca, Rio de Janeiro — RJ &bull; CNPJ 00.000.000/0001-00 &bull;
+          <a class="rodape__link-privacidade" href="privacidade.html">Política de Privacidade & LGPD</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão fixo de agendamento (aparece ao rolar a página) -->
+  <a class="zap-flutuante"
+     href="https://wa.me/5521999999999?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Navalha%20de%20Ouro."
+     target="_blank" rel="noopener"
+     aria-label="Agendar horário pelo WhatsApp">
+    <span class="zap-flutuante__icone" aria-hidden="true">💬</span>
+    <span class="zap-flutuante__texto">Agendar</span>
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

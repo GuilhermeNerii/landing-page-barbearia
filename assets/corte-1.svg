@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Foto de exemplo: corte degradê navalhado">
+  <!-- PLACEHOLDER: troque por uma foto real de corte (800x600) -->
+  <rect width="800" height="600" fill="#161616"/>
+  <rect x="16" y="16" width="768" height="568" fill="none" stroke="#d4af37" stroke-width="3"/>
+  <g fill="none" stroke="#d4af37" stroke-width="7" stroke-linecap="round">
+    <path d="M300 210 L500 330 M500 210 L300 330"/>
+    <circle cx="290" cy="345" r="34"/>
+    <circle cx="510" cy="345" r="34"/>
+  </g>
+  <text x="400" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#f7f5f0">CORTE 01</text>
+  <text x="400" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#d4af37">Degradê navalhado — troque por sua foto</text>
+</svg>

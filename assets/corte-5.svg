@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Foto de exemplo: combo corte e barba">
+  <!-- PLACEHOLDER: troque por uma foto real (800x600) -->
+  <rect width="800" height="600" fill="#161616"/>
+  <rect x="16" y="16" width="768" height="568" fill="none" stroke="#d4af37" stroke-width="3"/>
+  <g fill="none" stroke="#d4af37" stroke-width="7" stroke-linecap="round">
+    <path d="M310 200 L420 270 M420 200 L310 270"/>
+    <circle cx="302" cy="283" r="26"/>
+    <circle cx="428" cy="283" r="26"/>
+    <path d="M470 200 Q530 260 470 320"/>
+  </g>
+  <text x="400" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#f7f5f0">CORTE 05</text>
+  <text x="400" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#d4af37">Combo completo — troque por sua foto</text>
+</svg>
