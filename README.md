@@ -22,6 +22,16 @@ um horário pelo WhatsApp**.
 Basta dar duplo clique no `index.html` (não precisa de servidor).
 Para testar como no ar: `npx serve .` ou qualquer servidor estático.
 
+## 👥 Desenvolvedores
+
+**Cline (IA agente)** — design, arquitetura, CSS/layout, estilização mobile-first e SEO.
+
+**Lucas-Heitz (Seu amigo)** — desenvolvimento do JavaScript (`main.js`), implementação da lógica WhatsApp, validação de formulário e integração com APIs externas.
+
+Repositórios individuais:
+- Lucas-Heitz: [github.com/Lucas-Heitz](https://github.com/Lucas-Heitz)
+- Cline (project repo): [github.com/GuilhermeNerii/landing-page-barbearia](https://github.com/GuilhermeNerii/landing-page-barbearia)
+
 ## O que trocar antes de publicar
 
 1. **WhatsApp** — procure e substitua `5521999999999` em **todo** o `index.html`
@@ -30,10 +40,11 @@ Para testar como no ar: `npx serve .` ou qualquer servidor estático.
 2. **Endereço e mapa** — endereço real no texto, nos links "Como chegar" e no
    JSON-LD (cabeçalho do `index.html`); no iframe do mapa, troque `q=Tijuca...`
    pelo endereço ou pelo `place_id` da barbearia.
-3. **CNPJ e Razão Social** — atualizar no rodapé do `index.html` e na página `privacidade.html`.
-4. **Política de Privacidade (LGPD & Tráfego Pago)** — a página `privacidade.html` já está pronta
+6. **CNPJ e Razão Social** — atualizar no rodapé do `index.html` e na página `privacidade.html`.
+7. **Política de Privacidade (LGPD & Tráfego Pago)** — a página `privacidade.html` já está pronta
    e estilizada, compatível com as regras de anúncio do Google Ads e Meta Ads.
-5. **URL canônica e sociais** — `canonical`, `og:url` e as URLs das imagens sociais
+8. **URL canônica e sociais** — `canonical`, `og:url` e as URLs das imagens sociais
+   (hoje usam `https://www.navalhadeouro.com.br/` como exemplo).
    (hoje usam `https://www.navalhadeouro.com.br/` como exemplo).
 4. **Imagens** — substitua os SVGs de `/assets` mantendo os nomes:
    - `corte-1.svg` … `corte-6.svg` (galeria, 800×600)
