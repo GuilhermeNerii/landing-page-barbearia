@@ -24,13 +24,10 @@ Para testar como no ar: `npx serve .` ou qualquer servidor estático.
 
 ## 👥 Desenvolvedores
 
-**Cline (IA agente)** — design, arquitetura, CSS/layout, estilização mobile-first e SEO.
-
-**Lucas-Heitz (Seu amigo)** — desenvolvimento do JavaScript (`main.js`), implementação da lógica WhatsApp, validação de formulário e integração com APIs externas.
+**Guilherme Neri** — design, arquitetura, CSS/layout, estilização mobile-first, JavaScript (`main.js`) e SEO.
 
 Repositórios individuais:
-- Lucas-Heitz: [github.com/Lucas-Heitz](https://github.com/Lucas-Heitz)
-- Cline (project repo): [github.com/GuilhermeNerii/landing-page-barbearia](https://github.com/GuilhermeNerii/landing-page-barbearia)
+- [github.com/GuilhermeNerii/landing-page-barbearia](https://github.com/GuilhermeNerii/landing-page-barbearia)
 
 ## O que trocar antes de publicar
 
